@@ -50,8 +50,8 @@ body {
 /* header */
 /* logo */
 .studio-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
 .studio-header .container {
@@ -73,10 +73,6 @@ body {
   margin-right: 93px;
 }
 .site-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
 }
@@ -84,12 +80,34 @@ body {
   margin-right: 50px;
 }
 .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  position: relative;
   color: var(--title-color);
   text-decoration: none;
 }
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  background: var(--accent-color);
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  bottom: -32px;
+  left: 0px;
 }
 .contact-list {
   margin-left: auto;
@@ -497,15 +515,6 @@ body {
 }
 
 /* portfolio */
-/* header */
-.current {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
 /* main */
 .main-section {
   padding-top: 94px;
